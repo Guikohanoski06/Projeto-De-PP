@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    min-width: 80vw;
+    padding: 1.5rem 3rem;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.container_btns_navbar {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .btns_navbar {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    transition: all 0.6s;
+}
+
+.navbar .btns_navbar:hover {
+    transform: scale(1.05);
+}
+
+.container_btns_navbar:hover .btns_navbar:not(:hover) {
+    /* Estilos para os botões que não estão com o hover ativo quando o mouse está sobre o contêiner */
+    /* Por exemplo: */
+    opacity: 0.3; /* Diminui a opacidade dos botões que não estão com o hover ativo */
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.description_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 93vh;
+    min-width: 80vw;
+}
+
+
+
+
+
+
