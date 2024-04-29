@@ -18,6 +18,10 @@ body {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
 }
 
+main {
+    margin-bottom: 100vh;
+}
+
 
 .container_btns_navbar {
     display: flex;
@@ -37,7 +41,8 @@ body {
 .container_btns_navbar:hover .btns_navbar:not(:hover) {
     /* Estilos para os botões que não estão com o hover ativo quando o mouse está sobre o contêiner */
     /* Por exemplo: */
-    opacity: 0.3; /* Diminui a opacidade dos botões que não estão com o hover ativo */
+    opacity: 0.3;
+    /* Diminui a opacidade dos botões que não estão com o hover ativo */
 }
 
 .main_content {
@@ -62,8 +67,10 @@ body {
 }
 
 .description_section-content h1 {
-    font-size: 2.8rem; /* Tamanho da fonte em rem */
-    font-weight: 600; /* Peso da fonte */
+    font-size: 2.8rem;
+    /* Tamanho da fonte em rem */
+    font-weight: 600;
+    /* Peso da fonte */
 }
 
 .description_section-content p {
@@ -96,10 +103,45 @@ body {
     border: #066db1 1px solid;
 }
 
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+}
 
+.card-section-title {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: 0px 2px 2px rgb(84, 84, 84);
+    margin: 0 0 5rem 0;
+}
 
+.cards-div {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
 
+.card {
+    background-color: #7bbeeb;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 25%;
+    /* Centraliza o texto */
+}
 
+.card-title {
+    font-size: 24px;
+    border-bottom: 2px solid rgb(21, 19, 19);
+    margin-bottom: 0.5rem;
+    /* Adicionei um pequeno espaço abaixo do título */
+}
 
-
-
+.card-content {
+    font-size: 14px;
+    margin: 1.5rem 0 0 0;
+    /* Ajustei o tamanho da fonte para melhor legibilidade */
+}
