@@ -25,7 +25,7 @@ body {
 
 #header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -36,7 +36,13 @@ body {
     color: #333;
 }
 
-#header button {
+.btnContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.btnContainer button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -44,6 +50,7 @@ body {
     color: white;
     cursor: pointer;
     font-size: 14px;
+    transition: .2s;
 }
 
 #header button:hover {

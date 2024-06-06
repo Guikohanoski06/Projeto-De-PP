@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevMonthButton = document.getElementById("prevMonthButton");
     const nextMonthButton = document.getElementById("nextMonthButton");
     const currentMonthElement = document.getElementById("currentMonth");
+    const SeeNewAvailabilityButton = document.getElementById("SeeNewAvailabilityButton")
 
     let availabilities = [];
     let currentDate = new Date();
@@ -37,6 +38,11 @@ document.addEventListener("DOMContentLoaded", function () {
             newAvailabilityModal.style.display = "none";
         }
     });
+
+    SeeNewAvailabilityButton.addEventListener("click", () => {
+        
+    })
+
 
     // Navegar para o mês anterior
     prevMonthButton.addEventListener("click", function () {
@@ -115,5 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const formattedMinutes = minutes.padStart(2, '0'); // Adicionando um zero à esquerda, se necessário
         return `${hours}:${formattedMinutes}`;
     }
+
 });
     
